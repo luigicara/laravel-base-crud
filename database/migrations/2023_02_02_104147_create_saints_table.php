@@ -17,10 +17,10 @@ return new class extends Migration
             
             $table -> id();
 
-            $table -> string('nome', 32);
-            $table -> string('luogoNascita', 32);
-            $table -> date('dataBenedizione');
-            $table -> integer('numeroMiracoli') -> unsigned();
+            $table -> string('name', 32);
+            $table -> string('birthPlace', 32);
+            $table -> date('blessingDate');
+            $table -> integer('miracleCount') -> unsigned();
 
             $table -> timestamps();
         });
